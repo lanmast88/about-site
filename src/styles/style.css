@@ -4,9 +4,14 @@
     --link-hover-after: #5A33E1;
   }  
 
-  .title-site {
+  .navbar-brand {
     color: #000;
     font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .brand-large {
+    font-size: 1.8rem; /* стандартно 1.25rem */
     letter-spacing: 2px;
   }
 
