@@ -49,7 +49,7 @@
     max-width: 1200px;
   }
   
-  .about-section .title {
+  .title {
     color: #0d6efd;
     letter-spacing: 0.5px;
   }
@@ -90,7 +90,7 @@
   }
   
   .projects-section .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
   
@@ -121,6 +121,40 @@
     font-size: 0.9rem;
     margin-right: 4px;
   }
+
+  .tech-badge {
+    border: 1.5px solid #dee2e6;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #555;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-more {
+    flex: 1 1 auto;           
+    max-width: 85%;           
+    min-width: 70%;           
+    font-weight: 500;
+    white-space: nowrap;   
+  }
+  
+  .btn-github {
+    flex: 0 0 45px;          
+    height: 40px;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    white-space: nowrap;     
+  }
+  
+  .card-body .d-flex {
+    flex-wrap: nowrap !important;  
+  }
+  
+
+  
   
 
   

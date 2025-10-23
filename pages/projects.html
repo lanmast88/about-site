@@ -57,6 +57,283 @@
               </div>
             </div>
           </nav>
+
+          <!-- Контент -->
+          <main class="container mt-5 pt-5">
+            <!-- Секция: Мои проекты -->
+            <section class="projects-section py-5">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-uppercase text-primary">Мои проекты</h2>
+                    <p class="text-muted">Коллекция учебных и личных проектов</p>
+
+                    <!-- Фильтр кнопки -->
+                    <div class="btn-groups filter-buttons me-2" data-filter-group="category">
+                        <button class="btn btn-outline-primary active" data-filter="all">Все</button>
+                        <button class="btn btn-outline-primary" data-filter="all">HTML</button>
+                        <button class="btn btn-outline-primary" data-filter="all">JavaScript</button>
+                        <button class="btn btn-outline-primary" data-filter="all">React</button>
+                    </div>
+                </div>
+
+                <!-- Карточки проектов-->
+                <div class="row g-4 justify-content-center">
+                    
+                    <!-- Карточка 1 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/todo.png" class="card-img-top p-4" alt="To-DO">
+                          <!-- Описание -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">TO-DO</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Отслеживайте задачи с помощью настраиваемых папок проектов и заметок.
+                            </p>
+
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/habbit-tracker.png" class="card-img-top p-4" alt="Трекер привычек">
+                          <!-- Описание -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">Трекер привычек</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Ваш персональный помощник в формировании полезных привычек и достижении целей.
+                            </p>
+
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">React</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/budget-accounting.png" class="card-img-top p-4" alt="Учёт бюджета">
+                          <!-- Описание -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">Учёт бюджета</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Простое и эффективное решение для контроля ваших финансов.
+                            </p>
+
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">React</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/weather-app.png" class="card-img-top p-4" alt="Weather-app">
+                          <!-- Описание -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">Погода</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Получайте актуальную информацию о погоде в вашем городе с динамическими иконками, анимациями и прогнозом на несколько дней.
+                            </p>
+                            
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/focus-app.png" class="card-img-top p-4" alt="Focus-app">
+                          <!-- Описание -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">Помидоро</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Помогает концентрироваться с помощью таймера Помодоро, статистики продуктивности и настраиваемых режимов работы и отдыха.
+                            </p>
+
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 6 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100 rounded-4">
+                          <img src="../images/color-app.png" class="card-img-top p-4" alt="Цветовые палитры">
+                          <!-- Описание карточки -->
+                          <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold text-dark mb-0">Цветовые палитры</h5>
+                            </div>
+                            <p class="card-text text-muted mb-3">
+                                Интерактивная галерея цветовых палитр с эффектами наведения и плавными переходами, вдохновляющая на создание дизайнов и подбор цветовых сочетаний.
+                            </p>
+
+                            <!-- Технологии проекта -->
+                            <div class="tech-stack d-flex flex-wrap gap-2 mb-3">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                            </div>
+
+                            <!-- Кнопки карточки -->
+                            <div class="d-flex align-items-center justify-content-between mt-auto">
+                            <a href="#" class="btn btn-primary flex-grow-1 me-2 btn-more">
+                                <i class="bi bi-info-circle me-2"></i>Подробнее
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-github d-flex align-items-center justify-content-center">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer-section bg-white border-top mt-5 pt-5 pb-4">
+            <div class="container">
+            <div class="row gy-4 align-items-center">
+        
+                <!-- Логотип -->
+                <div class="col-md-4 text-md-start text-center">
+                <a href="#" class="navbar-brand fw-bold brand-large text-dark">
+                    USHAK<span class="text-primary">O</span>V
+                </a>
+                <p class="text-muted small mb-0 mt-2">
+                    © 2025 Ushakov Gleb. Все права защищены.
+                </p>
+                </div>
+        
+                <!-- Контакты -->
+                <div class="col-md-4 text-center">
+                <h6 class="fw-bold text-uppercase text-primary mb-1">Контакты</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-1">
+                    <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                    <a href="mailto:ushakov.gleb@example.com" class="text-decoration-none text-dark">
+                        um.glebushakov@gmail.com
+                    </a>
+                    </li>
+                    <li>
+                    <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                    Москва, Россия
+                    </li>
+                </ul>
+                </div>
+        
+                <!-- Cоциальные ссылки -->
+                <div class="col-md-4 text-md-end text-center">
+                <h6 class="fw-bold text-uppercase text-primary mb-3">Соцсети</h6>
+                <div class="d-inline-flex gap-3">
+                    <a href="#" class="text-dark social-link"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-dark social-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-dark social-link"><i class="bi bi-telegram"></i></a>
+                </div>
+                </div>
+        
+            </div>
+            </div>
+        </footer>
+
     </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
