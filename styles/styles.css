@@ -122,6 +122,12 @@
     margin-right: 4px;
   }
 
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 0.5rem;            
+  }
+
   .tech-badge {
     border: 1.5px solid #dee2e6;
     border-radius: 20px;
@@ -131,6 +137,7 @@
     color: #555;
     background-color: #fff;
     transition: all 0.2s ease;
+    white-space: nowrap;
   }
   
   .btn-more {
@@ -149,7 +156,7 @@
     white-space: nowrap;     
   }
   
-  .card-body .d-flex {
+  .card-body .card-buttons.d-flex {
     flex-wrap: nowrap !important;  
   }
   
