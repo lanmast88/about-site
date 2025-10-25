@@ -36,6 +36,50 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+    const nameInput = document.getElementById('nameInput');
+    const emailInput = document.getElementById('emailInput');
+    const commentInput = document.getElementById('commentInput');
+    const successMessage = document.getElementById('successMessage');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      // Очистка состояния
+      [nameInput, emailInput].forEach(input => input.classList.remove('is-invalid'));
+      successMessage.classList.add('d-none');
+
+      // Проверка имени
+      if (nameInput.value.trim().length < 2) {
+        nameInput.classList.add('is-invalid');
+        isValid = false;
+      }
+
+      // Проверка email
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailInput.classList.add('is-invalid');
+        isValid = false;
+      }
+
+      // Если форма валидна
+      if (isValid) {
+        successMessage.classList.remove('d-none');
+        nameInput.value = '';
+        emailInput.value = '';
+        commentInput.value = '';
+      }
+    });
+
+    // Скрываем ошибку при вводе
+    document.querySelectorAll('.form-control').forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.remove('is-invalid');
+      });
+    });
+  } 
 });
-
-
