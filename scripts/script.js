@@ -82,4 +82,68 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   } 
+
+  const projects = {
+    todo: {
+        title: "TO-DO",
+        description:"Удобное приложение для отслеживания задач и заметок с категориями и приоритетами.",
+        images: ["../images/todo.png", "../images/todo.png"],
+        github: "https://github.com/lanmast88/ToDo_QT_App"
+    },
+    tracker: {
+    title: "Трекер привычек",
+    description: "Приложение помогает формировать полезные привычки и отслеживать их прогресс. Пользователь может добавлять привычки, устанавливать цели на день, неделю или месяц, видеть статистику выполнения и получать напоминания. Интерфейс простой и интуитивно понятный, с визуальными графиками прогресса для мотивации.",
+    images: ["../images/habbit-tracker.png", "../images/habbit-tracker.png"],
+    github: "https://github.com/lanmast88/WB1"
+    }
+
+  };
+
+  const modalEl = document.querySelector('.modal[data-model="project"]');
+  const modal = new bootstrap.Modal(modalEl);
+
+  const modalTitle = modalEl.querySelector('.modal-title');
+  const modalDescription = modalEl.querySelector('.modal-description');
+  const carouselInner = modalEl.querySelector('.carousel-inner');
+  const githubLink = modalEl.querySelector('.modal-github-link');
+
+  const buttons = document.querySelectorAll('.open-modal-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const projectKey = button.dataset.project;
+      const project = projects[projectKey];
+
+      if (!project) return console.error("Проект не найден:", projectKey);
+
+      githubLink.href = project.github;
+
+      // Очистка карусели перед добавлением
+      carouselInner.innerHTML = '';
+
+      // Заполнение модалки
+      modalTitle.textContent = project.title;
+      modalDescription.textContent = project.description;
+
+      project.images.forEach((src, index) => {
+        const carouselItem = document.createElement('div');
+        carouselItem.classList.add('carousel-item');
+        if (index === 0) carouselItem.classList.add('active');
+
+        const img = document.createElement('img');
+        img.src = src;
+        img.classList.add('d-block', 'w-100');
+        img.alt = project.title + ' image';
+
+        carouselItem.appendChild(img);
+        carouselInner.appendChild(carouselItem);
+      });
+
+      modal.show();
+    });
+
+
+  });
+  
+
 });
