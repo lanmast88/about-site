@@ -125,7 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
       modalTitle.textContent = project.title;
       modalDescription.textContent = project.description;
 
-      project.images.forEach((src, index) => {
+      const customImages = button.getAttribute('data-images');
+      const imagesToUse = customImages ? JSON.parse(customImages) : project.images;
+
+      imagesToUse.forEach((src, index) => {
         const carouselItem = document.createElement('div');
         carouselItem.classList.add('carousel-item');
         if (index === 0) carouselItem.classList.add('active');
