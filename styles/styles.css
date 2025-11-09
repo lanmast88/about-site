@@ -9,7 +9,6 @@
   }
 
   .navbar-brand {
-    color: #000;
     font-weight: 800;
     letter-spacing: 1px;
   }
@@ -33,7 +32,7 @@
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: var(--link-hover-after); 
+    background-color: var(--bs-primary); 
     transition: width 0.3s ease;
   }
   
@@ -145,7 +144,7 @@
     max-width: 85%;           
     min-width: 70%;           
     font-weight: 500;
-    white-space: nowrap;   
+    white-space: nowrap; 
   }
   
   .btn-github {
