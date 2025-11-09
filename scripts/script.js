@@ -95,6 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     description: "Приложение помогает формировать полезные привычки и отслеживать их прогресс. Пользователь может добавлять привычки, устанавливать цели на день, неделю или месяц, видеть статистику выполнения и получать напоминания. Интерфейс простой и интуитивно понятный, с визуальными графиками прогресса для мотивации.",
     images: ["../images/habbit-tracker.png", "../images/habbit-tracker.png"],
     github: "https://github.com/lanmast88/WB1"
+    },
+    working: {
+      title: "Проект в разработке",
+      description: "Проект в разрабокте, подробной информации нет.",
+      images: [""],
+      github: "https://github.com/lanmast88/"
     }
 
   };
@@ -107,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const carouselInner = modalEl.querySelector('.carousel-inner');
   const githubLink = modalEl.querySelector('.modal-github-link');
 
-  const buttons = document.querySelectorAll('.open-modal-btn');
+  const buttons = document.querySelectorAll('.btn-more');
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
